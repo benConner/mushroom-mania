@@ -1,0 +1,13 @@
+<h1>hey</h1>
+
+<label for="">Poisonous
+    <input type="radio"  ng-model="toxsicity" value="Poisonous">
+</label>
+<label for="">
+    Non-Poisonous<input type="radio" ng-model="toxsicity" value="Non-Poisonous">
+</label>
+<div ng-repeat="mushroom in mushrooms">
+    <div ng-repeat="(key,value) in mushroom">
+        <div>{{key}}</div><div>{{value.description}}</div>
+    </div>
+</div>
